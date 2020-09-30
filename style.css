@@ -1,0 +1,248 @@
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+}
+
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.8)), url(Assets/CoverProfile.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.head_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	color:  white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+	width: 100%;
+	padding: 0px 30px;
+	background:  rgb(247, 142, 44);
+}
+
+.main_nav{
+	display: flex;
+	list-style: none;
+	padding: 0px 35px;
+	color: white;
+}
+
+.main_nav li{
+	padding: 20px 20px;
+}
+
+.main_nav a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	
+}
+
+.main_nav li.is_active a{
+	border: 1px solid white;
+	border-radius: 30px;
+}
+
+.main_nav li a:hover{
+	border: 1px solid rgb(247, 142, 44);
+	color:rgb(247, 142, 44);
+	border-radius: 30px;
+	background-color: white;
+}
+
+.title{
+	display: grid;
+	align-items: center;
+}
+
+.title h1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: rgb(247, 142, 44);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding-top: 8%;
+}
+
+.title ul li{
+	list-style: none;
+	text-align: center;
+	font-size: 50px;
+	align-items: center;
+}
+
+.title img{
+	height: 220px;
+	width: 220px;
+	border: 5px solid white;
+	border-radius: 50%;
+}
+
+.check_this{
+	padding: 15px;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+.check_this a{
+	text-decoration: none;
+	color: rgb(247, 142, 44);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.up_arrow{
+	margin-left: 1%;
+	margin-top: 2%;
+	transform:rotate(90deg);
+}
+
+footer{
+	background: rgb(247, 142, 44);
+	text-align: center;
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+	padding: 50px;
+}
+
+.nav_socmed ul{
+	display: flex;
+	justify-content: center;
+}
+.nav_socmed li{
+	list-style-type: none;
+	padding: 0px 25px;
+}
+
+.nav_socmed img{
+	width: 40px;
+	height: 40px;
+}
+
+/* ini css khusus untuk lamaran.html */
+.content{
+	padding: 7% 20%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background:  linear-gradient(rgba(0, 0, 0, 0.3),rgb(247, 142, 44,0.8));
+	color: black;
+	text-align: justify;
+	line-height: 40px;
+	font-size: 15px;
+}
+
+.content_background{
+	background: white;
+	padding: 5% 5%;
+	border-radius: 30px;
+}
+
+.content_from{
+	margin-left: 72%;
+}
+
+
+.content_footer{
+	margin-left: 85%;
+}
+
+/* Ini css khusus untuk CurriculumVitae.html */
+.nav_cv{
+    opacity: 0.8;
+    display: flex;
+	justify-content: space-around;
+	position: fixed;
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	bottom: 0;
+	width: 100%;
+	background: rgb(247, 142, 44);
+}
+
+.nav_cv ul li{
+    padding: 15px 60px;
+}
+
+.nav_cv ul{
+    list-style: none;
+	display: flex;
+}
+
+.nav_cv a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+.nav_cv li a:hover{
+	border: 1px solid rgb(247, 142, 44);
+	color:rgb(247, 142, 44);
+	border-radius: 30px;
+	background-color: white;
+}
+
+.content_cv{
+	background:  linear-gradient(rgba(0, 0, 0, 0.3),rgb(247, 142, 44,0.8));
+	padding: 7% 20%;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.content_cv h1{
+	color: rgb(247, 142, 44);
+	padding-bottom: 2% 2%;
+	border: 2px solid rgb(247, 142, 44);
+}
+
+.content_personal,
+.content_education,
+.content_jobExperience,
+.content_project,
+.content_academic{
+	padding: 5% 5%;
+	background: white;
+	border-radius: 20px;
+}
+
+.table_personal{
+	width: 100%;
+	text-align: left;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
+}
+.table_personal td{
+	padding: 1% 1%;
+}
+.label_personal{
+	width: 40%;
+}
+
+.table_education{
+	width: 100%;
+}
+.table_education td{
+	width: 25%;
+	vertical-align: top;
+}
+.table_education img{
+	width: 120px;
+	height: 120px;
+}
+
+.content_jobExperience ul,
+.content_project ul,
+.content_academic ul{
+	text-align: left;
+	list-style-type: square;
+}
+.content_jobExperience span,
+.content_project span,
+.content_academic span{
+	background-color: palevioletred;
+	font-style: italic;
+}
